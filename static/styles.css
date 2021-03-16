@@ -1,0 +1,40 @@
+html {
+  background-color: #00509d;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 4.5rem;
+  color: #fdc500;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: #faf9f9;
+}
+
+.board table {
+  letter-spacing: 40px;
+}
+
+.word {
+  height: 40px;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #fdc500;
+  color: #faf9f9;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  padding: 15px 32px;
+}

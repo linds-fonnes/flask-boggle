@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+<h1 class="title">Boggle</h1>
+<div class="board">
+  <table>
+    {% for line in board %}
+    <tr>
+      {% for letter in line %}
+      <td class="letters">{{letter}}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+<div class="stats">
+  <p>High Score: {{highscore}} <span>-- Times Played: {{played}}</span></p>
+</div>
+<form class="submit" method="POST">
+  <input type="text" placeholder="Guess a Word" name="guess" class="word" />
+  <button type="submit" class="button">Submit</button>
+</form>
+<p class="timer"></p>
+<p class="score"></p>
+<p class="message"></p>
+
+{% endblock %}
